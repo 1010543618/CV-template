@@ -38,7 +38,8 @@ Webpack、Babel是肯定要用的、之后做成用 YAML 配置内容、打印�
 
 ## 实现
 
-因为明天要用，所以我准备今天撸出来个初版：xxx
+因为明天要用，所以我准备今天撸出来个初版
 
-
+1. 首先先完成 HTML ，好的网页应该在没有 CSS 的情况下也能很好的显示：[HTML Complete. · 1010543618/Online-CV@5dd7d9e](https://github.com/1010543618/Online-CV/commit/5dd7d9edee7d52d756afdcb226251dc198196571)
+2. 然后完成 CSS ，好的网页应该在没有 JS 的情况下也能很好的显示：xxx
 
