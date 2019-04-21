@@ -5,58 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CV</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
-    <main>
-      <section>
-        <div>
+    <main id="cv-container">
+      <section id="cv-baseinfo">
+        <div class="avatar">
           <img src="./avatar.jpg" alt="avatar" width="200px" />
         </div>
-        <div>
+        <div class="info">
           <h2>张举丰</h2>
           <p>1年工作经验 | 本科 | 男 | 22岁</p>
           <p>
-            <span><i>电话</i><span>18941835126</span></span
-            ><span><i>电子邮箱</i><span>zjffun@gmail.com</span></span>
+            <span> <i class="fas fa-mobile-alt"></i> <span>18941835126</span></span
+            ><span> <i class="fas fa-envelope"></i> <span>zjffun@gmail.com</span></span>
           </p>
         </div>
       </section>
-      <section>
+      <section id="cv-detailinfo-wrapper">
         <dl>
-          <div>
-            <dl>技能</dl>
+          <div class="cv-detailinfo">
+            <dl><h2>技能</h2></dl>
             <dd>
-              <dl>
-                <dl>前端</dl>
-                <dd>
-                  ES6、CSS3、HTML5、TypeScriptReact、Redux、D3.js、Vue.js等
-                </dd>
-                <dl>后端</dl>
-                <dd>PHP、Node.js、JavaEE（SSM框架集）</dd>
-                <dl>服务器</dl>
-                <dd>Vim、Linux、Shell、Apache、Nginx、Docker等</dd>
-                <dl>工具</dl>
-                <dd>
-                  Git、SVN、NPM、Yarn、VSCode、Webpack、Babel、Lerna、XXLint、TypeDoc、Swagger等
-                </dd>
+                <p>前端：
+                  ES6、CSS3、HTML5、TypeScriptReact、Redux、D3.js、Vue.js 等
+                </p>
+                <p>后端：PHP、Node.js、JavaEE（SSM 框架集）</p>
+                <p>服务器：Vim、Linux、Shell、Apache、Nginx、Docker 等</p>
+                <p>工具：
+                  Git、SVN、NPM、Yarn、VSCode、Webpack、Babel、Lerna、XXLint、TypeDoc、Swagger 等
+                </p>
               </dl>
             </dd>
           </div>
-          <div>
-            <dl>工作经验</dl>
+          <div class="cv-detailinfo">
+            <dl><h2>工作经验</h2></dl>
             <dd>
               <ul>
-                <li>北京中地时空数码科技有限公司 <span>2018.07-至今</span></li>
+                <li>北京中地时空数码科技有限公司 <span class="tag">2018.07-至今</span></li>
               </ul>
             </dd>
           </div>
-          <div>
-            <dl>项目经历</dl>
-            <dd>
+          <div class="cv-detailinfo">
+            <dl><h2>项目经历</h2></dl>
+            <dd class="project-experience">
               <section>
                 <article>
                   <h4>
-                    地层古生物鉴定中心网络平台<span>2019年01月-至今</span>
+                    地层古生物鉴定中心网络平台<span class="tag">2019年01月-至今</span>
                   </h4>
                   <dl>
                     <dt>项目描述</dt>
@@ -92,11 +89,9 @@
                     </dd>
                   </dl>
                 </article>
-              </section>
-              <section>
                 <article>
                   <h4>
-                    标准化石数据库科普类信息产品前端展示系统<span
+                    标准化石数据库科普类信息产品前端展示系统<span class="tag"
                       >2018年07月-2019年03月</span
                     >
                   </h4>
@@ -159,7 +154,7 @@
                 </article>
                 <article>
                   <h4>
-                    基于 Skyline 的阜新市三维规划辅助系统<span
+                    基于 Skyline 的阜新市三维规划辅助系统<span class="tag"
                       >2018年03月-2018年05月</span
                     >
                   </h4>
@@ -193,7 +188,7 @@
                 </article>
                 <article>
                   <h4>
-                    辽宁工大素质拓展网站<span>2018年03月-2018年05月</span>
+                    辽宁工大素质拓展网站<span class="tag">2018年03月-2018年05月</span>
                   </h4>
                   <dl>
                     <dt>项目描述</dt>
@@ -213,7 +208,7 @@
                 </article>
                 <article>
                   <h4>
-                    阜新市银通物业管理系统<span>2016年07月-2016年08月</span>
+                    阜新市银通物业管理系统<span class="tag">2016年07月-2016年08月</span>
                   </h4>
                   <dl>
                     <dt>项目描述</dt>
@@ -235,7 +230,7 @@
                   </dl>
                 </article>
                 <article>
-                  <h4>家萌 App<span>2016年03月-2016年07月</span></h4>
+                  <h4>家萌 App<span class="tag">2016年03月-2016年07月</span></h4>
                   <dl>
                     <dt>项目描述</dt>
                     <dd>
@@ -253,47 +248,37 @@
               </section>
             </dd>
           </div>
-          <div>
-            <dl>教育经历</dl>
+          <div class="cv-detailinfo">
+            <dl><h2>教育经历</h2></dl>
             <dd>
               <ul>
                 <li>
-                  辽宁工程技术大学 2014-2018 本科 地理信息科学专业
+                  辽宁工程技术大学 | 本科 | 地理信息科学专业 <span class="tag">2014-2018</span>
                 </li>
               </ul>
             </dd>
           </div>
-          <div>
-            <dl>自我描述</dl>
+          <div class="cv-detailinfo">
+            <dl><h2>自我描述</h2></dl>
             <dd>
-              <p>本人热爱编程，擅长 Web 前端开发，学习能力适应能力强。</p>
-              <p>
-                在大学期间加入水晶草莓软件工作室和学长和同学一起参与各种项目和比赛。
-              </p>
-              <p>
+              <p>本人热爱编程，擅长 Web 前端开发，学习能力适应能力强。在大学期间加入水晶草莓软件工作室和学长和同学一起参与各种项目和比赛。
                 业余时间会参与 MDN 文档、印记中文文档的本地化，为 GitHub 开源项目做贡献。
               </p>
               <p>
-                爱好是编程、看动漫、逛贴吧和知乎，但最近每季好的动漫越来越少了。哎，不是我老了就是业界药丸啊
+                我的爱好是编程、看动漫、逛贴吧和知乎。但最近每季好的动漫越来越少了。哎，不是我老了就是业界药丸啊
                 T~T。
               </p>
             </dd>
           </div>
-          <div>
-            <dl>社交主页</dl>
+          <div class="cv-detailinfo">
+            <dl><h2>社交主页</h2></dl>
             <dd>
-              <dl>
-                <dt>GitHub</dt>
-                <dd>https://github.com/1010543618</dd>
-                <dt>HackerRank</dt>
-                <dd>https://www.hackerrank.com/h1010543618</dd>
-                <dt>MDN</dt>
-                <dd>
+                <p><i class="fab fa-github"></i> GitHub: https://github.com/1010543618</p>
+                <p><i class="fab fa-hackerrank"></i> HackerRank: https://www.hackerrank.com/h1010543618</p>
+                <p><i class="fas fa-link"></i> MDN:
                   https://developer.mozilla.org/zh-CN/profiles/zjffun
-                </dd>
-                <dt>博客园</dt>
-                <dd>http://www.cnblogs.com/jffun-blog/</dd>
-              </dl>
+                </p>
+                <p><i class="fas fa-link"></i> 博客园: http://www.cnblogs.com/jffun-blog/</p>
             </dd>
           </div>
           <!-- <div>

@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+dd,
+p,
+h2,
+h4,
+ul,
+dl {
+  margin: 0px;
+}
+ul {
+  padding: 0;
+}
+ul > li {
+  list-style: none;
+}
+p {
+  line-height: 1.5rem;
+}
+.tag {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 0.8rem;
+  padding: 3px 10px;
+  margin-right: 10px;
+}
+
+#cv-container {
+  max-width: 830px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+}
+#cv-baseinfo {
+  display: flex;
+  padding: 50px;
+  background: #f3f3f3;
+}
+#cv-baseinfo .avatar {
+  flex: 0 0 130px;
+}
+#cv-baseinfo .avatar img {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  border-radius: 50%;
+}
+#cv-baseinfo .info {
+  flex: 1 1 0;
+  margin: auto 0;
+}
+
+#cv-detailinfo-wrapper {
+  padding: 10px 50px;
+}
+.cv-detailinfo > dl {
+  padding-left: 6px;
+  border-left: 2px solid lightgreen;
+}
+.cv-detailinfo > dl > h2 {
+  font-size: 20px;
+}
+.cv-detailinfo > dd {
+  margin: 20px 0 20px 10px;
+}
+.cv-detailinfo .project-experience h4 {
+  margin: 16px 0 6px;
+  font-size: 16px;
+}
+.cv-detailinfo .project-experience dt {
+  margin: 6px 0;
+}
+.cv-detailinfo .project-experience dd {
+  padding: 10px;
+  background: #f3f3f3;
+}
