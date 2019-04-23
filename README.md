@@ -1,4 +1,6 @@
-# Online-CV
+# CV-template
+
+一个在线简历模板
 
 示例：https://1010543618.github.io/Online-CV/
 
