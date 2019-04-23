@@ -1,6 +1,4 @@
-# CV-template
-
-一个在线简历模板
+# Online-CV
 
 示例：https://1010543618.github.io/Online-CV/
 
@@ -44,5 +42,5 @@ Webpack、Babel是肯定要用的、之后做成用 YAML 配置内容、打印�
 
 1. 首先先完成 HTML ，好的网页应该在没有 CSS 的情况下也能很好的显示：[HTML Complete. · 1010543618/Online-CV@5dd7d9e](https://github.com/1010543618/Online-CV/commit/5dd7d9edee7d52d756afdcb226251dc198196571)
 2. 然后完成 CSS ，好的网页应该在没有 JS 的情况下也能很好的显示：[CSS complete. · 1010543618/Online-CV@bc494da](https://github.com/1010543618/Online-CV/commit/bc494da64a2d6466814557d1bca63ebc445d0327) （现在响应式还不怎么好，不过已经够明天打印的了）
-3. 完成响应式，打印的话直接`ctrl + p`就行。i18n 倒是有很多现成的，但感觉不太对劲，继续研究研究。。
+3. 完成响应式，打印的话直接`ctrl + p`就行。i18n 倒是有很多现成的，但感觉不太对劲，继续研究研究。。[i18next](https://www.i18next.com/) 不错，但这么一个页面用配置生成和直接新建一个页面几乎一样啊（新建的页面还更灵活），除非像 Swagger 一样形成个规范（简历有什么规范。。弃坑了）。
 
