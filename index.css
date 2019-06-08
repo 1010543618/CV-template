@@ -25,6 +25,7 @@ ol {
   padding-left: 1rem;
 }
 
+/* global */
 .tag {
   display: inline-block;
   font-size: 0.8rem;
@@ -37,11 +38,14 @@ ol {
   display: inline-block;
 }
 
+/* main container */
 #cv-container {
   max-width: 830px;
   margin: 0 auto;
   border: 1px solid #ddd;
 }
+
+/* base info */
 #cv-baseinfo {
   display: flex;
   padding: 50px;
@@ -60,6 +64,7 @@ ol {
   margin: auto 0;
 }
 
+/* detail info */
 #cv-detailinfo-wrapper {
   padding: 10px 50px;
 }
@@ -73,6 +78,11 @@ ol {
 .cv-detailinfo > dd {
   margin: 20px 0 20px 10px;
 }
+.cv-detailinfo .work-experience p {
+  font-size: 0.8em;
+  padding: 10px;
+  background: #f3f3f3;
+}
 .cv-detailinfo .project-experience h4 {
   margin: 16px 0 6px;
   font-size: 16px;
@@ -81,6 +91,7 @@ ol {
   margin: 6px 0;
 }
 .cv-detailinfo .project-experience dd {
+  font-size: 0.8em;
   padding: 10px;
   background: #f3f3f3;
 }
@@ -88,6 +99,7 @@ ol {
   overflow-wrap: break-word;
 }
 
+/* Responsive */
 @media screen and (max-width: 660px) {
   #cv-baseinfo,
   #cv-detailinfo-wrapper {
