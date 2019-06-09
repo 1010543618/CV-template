@@ -1,6 +1,6 @@
 # Online-CV
 
-示例：https://1010543618.github.io/Online-CV/
+示例：https://zjffun.github.io/Online-CV/
 
 首先在线简历的好处有很多，我就不一一列举了，直接进主体。
 
