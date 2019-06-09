@@ -24,6 +24,12 @@ ul > li {
 ol {
   padding-left: 1rem;
 }
+a {
+  text-decoration: none;
+}
+.fab{
+  width: 16px;
+}
 
 /* global */
 .tag {
