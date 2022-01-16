@@ -27,7 +27,7 @@ ol {
 a {
   text-decoration: none;
 }
-.fab{
+.fab {
   width: 16px;
 }
 
@@ -37,78 +37,117 @@ a {
   font-size: 0.8rem;
   color: #666;
   line-height: 0.8rem;
-  padding: 3px 10px;
-  margin-right: 10px;
+  padding: 3px 0;
+  margin-left: 0.2em;
 }
 .inline-group {
   display: inline-block;
 }
+.language-options {
+  position: absolute;
+  top: 0.2em;
+  right: 0.5em;
+}
+@media print {
+  .language-options {
+    display: none;
+  }
+}
 
 /* main container */
-#cv-container {
+#resume-container {
+  position: relative;
   max-width: 830px;
   margin: 0 auto;
   border: 1px solid #ddd;
 }
 
 /* base info */
-#cv-baseinfo {
+#resume-baseinfo {
   display: flex;
   padding: 50px;
   background: #f3f3f3;
 }
-#cv-baseinfo .avatar {
+#resume-baseinfo .avatar {
   flex: 0 0 130px;
 }
-#cv-baseinfo .avatar img {
+#resume-baseinfo .avatar img {
   width: 100%;
   padding: 10px;
   border-radius: 50%;
 }
-#cv-baseinfo .info {
+#resume-baseinfo .info {
   flex: 1 1 0;
   margin: auto 0;
 }
 
 /* detail info */
-#cv-detailinfo-wrapper {
+#resume-detailinfo-wrapper {
   padding: 10px 50px;
 }
-.cv-detailinfo > dl {
+.resume-detailinfo > dl {
   padding-left: 6px;
   border-left: 2px solid lightgreen;
 }
-.cv-detailinfo > dl > h2 {
+.resume-detailinfo > dl > h2 {
   font-size: 20px;
+  text-transform: uppercase;
 }
-.cv-detailinfo > dd {
+.resume-detailinfo > dd {
   margin: 20px 0 20px 10px;
 }
-.cv-detailinfo .work-experience p {
+.resume-detailinfo .work-experience .work-experience__detail,
+.resume-detailinfo .open-source-contributions {
   font-size: 0.8em;
-  padding: 10px;
+  padding: 0.6em 1em;
+  margin: 0.5em 0 1.5em 0;
   background: #f3f3f3;
 }
-.cv-detailinfo .project-experience h4 {
-  margin: 16px 0 6px;
-  font-size: 16px;
+.resume-detailinfo .work-experience .work-experience__detail ul,
+.resume-detailinfo .open-source-contributions ul {
+  padding-left: 1rem;
 }
-.cv-detailinfo .project-experience dt {
-  margin: 6px 0;
+.resume-detailinfo .work-experience .work-experience__detail ul > li,
+.resume-detailinfo .open-source-contributions ul > li {
+  list-style: square;
 }
-.cv-detailinfo .project-experience dd {
-  font-size: 0.8em;
-  padding: 10px;
-  background: #f3f3f3;
+.resume-detailinfo .work-experience .work-experience__detail ul > li::marker,
+.resume-detailinfo .open-source-contributions ul > li::marker {
+  color: violet;
 }
-.cv-detailinfo .homepages {
+
+.resume-detailinfo .homepages {
   overflow-wrap: break-word;
+}
+
+.skell-detail {
+  margin-bottom: -0.5em;
+}
+
+.skell-detail__item {
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.2em 0.6em;
+  border-radius: 0.2em;
+  background: lightgreen;
+  white-space: nowrap;
 }
 
 /* Responsive */
 @media screen and (max-width: 660px) {
-  #cv-baseinfo,
-  #cv-detailinfo-wrapper {
-    padding: 10px;
+  .info {
+    width: calc(100% - 130px);
+  }
+  .social-home-page-list li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #resume-baseinfo {
+    padding: 2em 0.5em 1em;
+  }
+  #resume-detailinfo-wrapper {
+    padding: 1em;
   }
 }
