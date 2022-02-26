@@ -70,15 +70,20 @@ a {
 }
 #resume-baseinfo .avatar {
   flex: 0 0 130px;
+  padding: 10px;
 }
 #resume-baseinfo .avatar img {
   width: 100%;
-  padding: 10px;
   border-radius: 50%;
+  background: #fff;
 }
 #resume-baseinfo .info {
   flex: 1 1 0;
   margin: auto 0;
+}
+
+#resume-baseinfo .info p {
+  margin: 0.5em 0;
 }
 
 /* detail info */
