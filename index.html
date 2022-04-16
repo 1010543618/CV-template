@@ -61,12 +61,11 @@
           </ul>
         </div>
       </section>
+
       <section id="resume-detailinfo-wrapper">
-        <div class="resume-detailinfo">
-          <dl>
-            <h2>技能</h2>
-          </dl>
-          <dd class="skell-detail">
+        <article class="resume-detailinfo">
+          <h2 class="resume-detailinfo__title">技能</h2>
+          <div class="resume-detailinfo__content skell-detail">
             <p>
               <span class="skell-detail__item">JavaScript</span>
               <span class="skell-detail__item">CSS</span>
@@ -84,29 +83,58 @@
               <span class="skell-detail__item">Karma, Mocha & Chai</span>
               <span class="skell-detail__item">Cypress</span>
             </p>
-          </dd>
-        </div>
-        <div class="resume-detailinfo">
-          <dl>
-            <h2>工作经验</h2>
-          </dl>
-          <dd class="work-experience">
+          </div>
+        </article>
+
+        <article class="resume-detailinfo">
+          <h2 class="resume-detailinfo__title">工作经验</h2>
+          <div class="resume-detailinfo__content experience">
             <ul>
               <li>
                 58 同城 - 高级前端开发工程师
                 <span class="tag">2020.11 - 至今</span>
-                <div class="work-experience__detail">
+                <div class="experience__detail">
                   <p>
-                    主要负责商业地产和公寓 B 端业务，参与了低代码平台、iconfont
+                    负责商业地产和公寓 B
+                    端业务前端开发，参与低代码平台、iconfont
                     平台、设计图转代码平台的设计和研发。
                   </p>
+                </div>
+              </li>
+              <li>
+                上海谐桐信息技术有限公司 - 前端开发工程师
+                <span class="tag">2019.05 - 2020.11</span>
+                <div class="experience__detail">
+                  <p>
+                    负责领导驾驶舱项目的前端架构设计、开发、自动化测试和自动化部署。
+                  </p>
+                </div>
+              </li>
+              <li>
+                北京中地时空数码科技有限公司 - 前端开发工程师
+                <span class="tag">2018.07 - 2019.05</span>
+                <div class="experience__detail">
+                  <p>
+                    负责标准化石展示系统和标准化石数据录入子系统的前后端开发。
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="resume-detailinfo">
+          <h2 class="resume-detailinfo__title">项目经历</h2>
+          <div class="resume-detailinfo__content experience">
+            <ul>
+              <li>
+                58技术项目 <span class="tag">2020.11 - 至今</span>
+                <div class="experience__detail">
+                  <p>公司内部的共建项目，用来提升开发效率。</p>
+                  <p>工作内容：</p>
                   <ul>
                     <li>
-                      前端架构设计和开发：主要使用 UmiJS
-                      开发微前端子项目，接入统一的微前端主项目；
-                    </li>
-                    <li>
-                      低代码平台：负责组件库动态加载和可视化编辑器功能设计和研发；
+                      低代码平台：负责组件库动态加载和可视化编辑器功能设计和研发，制作组件库动态加载库供其他低代码平台使用；
                     </li>
                     <li>
                       iconfont
@@ -120,69 +148,83 @@
                 </div>
               </li>
               <li>
-                上海谐桐信息技术有限公司 - 前端开发工程师
-                <span class="tag">2019.05 - 2020.11</span>
-                <div class="work-experience__detail">
-                  <p>主要负责领导驾驶舱项目。</p>
+                金铺 <span class="tag">2020.11 - 至今</span>
+                <div class="experience__detail">
+                  <p>
+                    帮助业主更快地转让商铺，提供上门实勘、优先推广、客户推荐等功能。
+                  </p>
+                  <p>工作内容：</p>
                   <ul>
                     <li>
-                      前端架构设计和开发：主要使用 Vue.js 全家桶 + Echarts
-                      进行开发，结合 Sortable、Hammer.js、dom-to-image
-                      等库实现了复杂的拖拽、手势、截图等功能；
-                    </li>
-                    <li>
-                      编写 Cypress
-                      测试脚本：推动项目使用端对端测试以提高项目质量；
-                    </li>
-                    <li>
-                      项目前端的 Jenkins
-                      自动化部署维护：推动项目使用自动化部署提高上线效率，避免手动上线带来的误操作的风险。
+                      后台管理系统的前端开发：使用 UmiJS
+                      开发微前端子项目，接入统一的微前端主项目。
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
-                北京中地时空数码科技有限公司 - 前端开发工程师
-                <span class="tag">2018.07 - 2019.05</span>
-                <div class="work-experience__detail">
-                  <p>主要负责标准化石前端展示项目。</p>
+                领导驾驶舱 <span class="tag">2019.05 - 2020.11</span>
+                <div class="experience__detail">
+                  <p>
+                    使用图表直观展示各委办局数据，提供任务分配、批复、记事本、日程安排等功能。
+                  </p>
+                  <p>工作内容：</p>
                   <ul>
-                    <li>根据客户需求设计页面原型；</li>
                     <li>
-                      前端开发：基于开源项目 paleobiodb/navigator
-                      实现节约开发成本；
+                      前端架构设计和开发；驾驶舱主要使用 Vue.js 全家桶 + Echarts
+                      + Axios 进行开发，并结合 Sortable、Hammer.js、dom-to-image
+                      等库实现了复杂的拖拽、手势、截图等功能。优化需请求大量数据的“页面”的切换；
                     </li>
                     <li>
-                      MySQL 数据库建库和后端开发：发现公司内部框架的 SQL
-                      注入问题，使用参数化语句 + 白名单的方式进行修复；
+                      前端自动化测试：编写 Cypress
+                      测试脚本，推动项目使用端对端测试以提高项目质量；
                     </li>
-                    <li>系统测试和部署；</li>
-                    <li>撰写项目文档。</li>
+                    <li>
+                      前端自动化部署：配置 Jenkins
+                      ，推动项目使用自动化部署提高上线效率，避免手动上线带来的误操作的风险。
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                标准化石展示系统
+                <span class="tag">2018.07 - 2019.05</span>
+                <div class="experience__detail">
+                  <p>
+                    用于在地图和古地理图上查询和展示不同物种和地质年代的标准化石数据。
+                  </p>
+                  <p>工作内容：</p>
+                  <ul>
+                    <li>
+                      前端开发：借鉴开源项目 paleobiodb/navigator，使用 D3.js 和
+                      Leaflet 实现标准化石数据的展示；
+                    </li>
+                    <li>
+                      数据库和后端开发：数据库使用 MySQL，后端使用 ASP.NET
+                      开发。
+                    </li>
                   </ul>
                 </div>
               </li>
             </ul>
-          </dd>
-        </div>
-        <div class="resume-detailinfo">
-          <dl>
-            <h2>教育经历</h2>
-          </dl>
-          <dd>
+          </div>
+        </article>
+
+        <article class="resume-detailinfo">
+          <h2 class="resume-detailinfo__title">教育经历</h2>
+          <div class="resume-detailinfo__content">
             <ul>
               <li>
                 辽宁工程技术大学 | 学士学位 | 地理信息科学专业
                 <span class="tag">2014 - 2018</span>
               </li>
             </ul>
-          </dd>
-        </div>
+          </div>
+        </article>
 
-        <div class="resume-detailinfo">
-          <dl>
-            <h2>证书</h2>
-          </dl>
-          <dd>
+        <article class="resume-detailinfo">
+          <h2 class="resume-detailinfo__title">证书</h2>
+          <div class="resume-detailinfo__content">
             <ul>
               <li>
                 全国信息化工程师项目-GIS应用人才测评证书（二级开发方向）
@@ -191,14 +233,12 @@
               <li>大学英语四级 <span class="tag">2018.02</span></li>
               <li>全国计算机等级二级 <span class="tag">2016.09</span></li>
             </ul>
-          </dd>
-        </div>
+          </div>
+        </article>
 
-        <div class="resume-detailinfo">
-          <dl>
-            <h2>开源贡献</h2>
-          </dl>
-          <dd>
+        <article class="resume-detailinfo">
+          <h2 class="resume-detailinfo__title">开源贡献</h2>
+          <div class="resume-detailinfo__content">
             <div class="open-source-contributions">
               <ul>
                 <li>VS Code 代码片段管理器；</li>
@@ -211,9 +251,10 @@
                 </li>
               </ul>
             </div>
-          </dd>
-        </div>
+          </div>
+        </article>
       </section>
+
       <aside class="language-options">
         <a href="index.html">简体中文</a>
         |

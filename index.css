@@ -49,6 +49,9 @@ a {
   right: 0.5em;
 }
 @media print {
+  a {
+    color: black;
+  }
   .language-options {
     display: none;
   }
@@ -90,33 +93,35 @@ a {
 #resume-detailinfo-wrapper {
   padding: 10px 50px;
 }
-.resume-detailinfo > dl {
+.resume-detailinfo > .resume-detailinfo__title {
   padding-left: 6px;
   border-left: 2px solid lightgreen;
-}
-.resume-detailinfo > dl > h2 {
   font-size: 20px;
   text-transform: uppercase;
 }
-.resume-detailinfo > dd {
+.resume-detailinfo > .resume-detailinfo__content {
   margin: 20px 0 20px 10px;
 }
-.resume-detailinfo .work-experience .work-experience__detail,
+
+.resume-detailinfo .experience .experience__detail,
 .resume-detailinfo .open-source-contributions {
   font-size: 0.8em;
   padding: 0.6em 1em;
   margin: 0.5em 0 1.5em 0;
   background: #f3f3f3;
 }
-.resume-detailinfo .work-experience .work-experience__detail ul,
+
+.resume-detailinfo .experience .experience__detail ul,
 .resume-detailinfo .open-source-contributions ul {
   padding-left: 1rem;
 }
-.resume-detailinfo .work-experience .work-experience__detail ul > li,
+
+.resume-detailinfo .experience .experience__detail ul > li,
 .resume-detailinfo .open-source-contributions ul > li {
   list-style: square;
 }
-.resume-detailinfo .work-experience .work-experience__detail ul > li::marker,
+
+.resume-detailinfo .experience .experience__detail ul > li::marker,
 .resume-detailinfo .open-source-contributions ul > li::marker {
   color: violet;
 }

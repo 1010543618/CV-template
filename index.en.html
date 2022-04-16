@@ -62,12 +62,11 @@
           </ul>
         </div>
       </section>
+
       <section id="resume-detailinfo-wrapper">
-        <div class="resume-detailinfo">
-          <dl>
-            <h2>skills</h2>
-          </dl>
-          <dd class="skell-detail">
+        <article class="resume-detailinfo">
+          <h2 class="resume-detailinfo__title">skills</h2>
+          <div class="resume-detailinfo__content skell-detail">
             <p>
               <span class="skell-detail__item">JavaScript</span>
               <span class="skell-detail__item">CSS</span>
@@ -85,34 +84,69 @@
               <span class="skell-detail__item">Karma, Mocha & Chai</span>
               <span class="skell-detail__item">Cypress</span>
             </p>
-          </dd>
-        </div>
-        <div class="resume-detailinfo">
-          <dl>
-            <h2>work experience</h2>
-          </dl>
-          <dd class="work-experience">
+          </div>
+        </article>
+
+        <article class="resume-detailinfo">
+          <h2 class="resume-detailinfo__title">work experience</h2>
+          <div class="resume-detailinfo__content experience">
             <ul>
               <li>
                 WUBA - Senior Front-end engineer
                 <span class="tag">2020.11 - Present</span>
-                <div class="work-experience__detail">
+                <div class="experience__detail">
                   <p>
-                    Mainly responsible for the development of commercial real
-                    estate and apartment enterprise user business, and
-                    participated in the design and development of low-code
-                    platform, iconfont platform, and Sketch to code platform.
+                    Responsible for the development of commercial real estate
+                    and apartment enterprise user business, and participated in
+                    the design and development of low-code platform, iconfont
+                    platform, and Sketch to code platform.
                   </p>
+                </div>
+              </li>
+              <li>
+                Shanghai Xietong Information Technology Co., Ltd. - Front-end
+                engineer
+                <span class="tag">2019.05 - 2020.11</span>
+                <div class="experience__detail">
+                  <p>
+                    Responsible for the design, development, CI and CD of
+                    dashboard project.
+                  </p>
+                </div>
+              </li>
+              <li>
+                Beijing Zondy Cyber Science and Technology Co., Ltd. - Front-end
+                engineer
+                <span class="tag">2018.07 - 2019.05</span>
+                <div class="experience__detail">
+                  <p>
+                    Mainly responsible for the development of standard fossil
+                    display system and standard fossil data entry subsystem.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="resume-detailinfo">
+          <h2 class="resume-detailinfo__title">projects</h2>
+          <div class="resume-detailinfo__content experience">
+            <ul>
+              <li>
+                58 Technical Projects <span class="tag">2020.11 - Present</span>
+                <div class="experience__detail">
+                  <p>
+                    Co-construction projects within the company are used to
+                    improve development efficiency.
+                  </p>
+                  <p>My work:</p>
                   <ul>
-                    <li>
-                      Front-end architecture design and development: mainly use
-                      UmiJS to develop micro-front-end sub-projects, and access
-                      the unified micro-front-end main project;
-                    </li>
                     <li>
                       Low-code platform: responsible for design and development
                       of component libraries dynamic loading function and visual
-                      editors;
+                      editors, and create component libraries dynamically load
+                      libraries for use by other low-code platforms;
                     </li>
                     <li>
                       iconfont platform: responsible for design and development
@@ -126,66 +160,85 @@
                 </div>
               </li>
               <li>
-                Shanghai Xietong Information Technology Co., Ltd. - Front-end
-                engineer
-                <span class="tag">2019.05 - 2020.11</span>
-                <div class="work-experience__detail">
-                  <p>Mainly responsible for dashboard project.</p>
+                Store transfer VIP <span class="tag">2020.11 - Present</span>
+                <div class="experience__detail">
+                  <p>
+                    Help owners to transfer shops faster, provide door-to-door
+                    survey, priority promotion, customer recommendation and
+                    other functions.
+                  </p>
+                  <p>My work:</p>
+                  <ul>
+                    <li>
+                      Front-end development of the admin system: use UmiJS to
+                      develop the micro subproject sub project, and access the
+                      unified micro front-end main project.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                Dashboard <span class="tag">2019.05 - 2020.11</span>
+                <div class="experience__detail">
+                  <p>
+                    Use charts to visually display the data of each bureau, and
+                    provide functions such as task assignment, approval,
+                    notepad, and schedule.
+                  </p>
+                  <p>My work:</p>
                   <ul>
                     <li>
                       Front-end architecture design and development: Mainly use
-                      Vue.js + Echarts for development, combined with Sortable,
-                      Hammer.js, dom-to-image and other libraries to achieve
-                      complex drag and drop, gestures, screenshots and other
-                      functions;
+                      Vue.js + Echarts + Axios for development, combined with
+                      Sortable, Hammer.js, dom-to-image and other libraries to
+                      achieve complex drag and drop, gestures, screenshots and
+                      other functions. Optimize the switching of "pages" that
+                      require large amounts of data;
                     </li>
                     <li>
-                      Writing Cypress Test Scripts: Drive projects to use
-                      end-to-end testing to improve project quality;
+                      Automated test: Writing Cypress test scripts, and drive
+                      the project to use end-to-end testing to improve project
+                      quality;
                     </li>
                     <li>
-                      Jenkins automated deployment maintenance: Promote the use
-                      of automated deployment for projects to improve the
-                      efficiency of deployment and avoid the risk of
+                      Automated deployment: Config Jenkins, and drive the
+                      project to use of automated deployment for projects to
+                      improve the efficiency of deployment and avoid the risk of
                       misoperation caused by manual deployment.
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
-                Beijing Zondy Cyber Science and Technology Co., Ltd. - Front-end
-                engineer
+                Fossil display system
                 <span class="tag">2018.07 - 2019.05</span>
-                <div class="work-experience__detail">
+                <div class="experience__detail">
                   <p>
-                    Mainly responsible for standard fossil front-end display
-                    projects.
+                    Used to query and display fossil data of different species
+                    and geological ages on maps and paleogeographic maps.
                   </p>
+                  <p>My work:</p>
                   <ul>
-                    <li>Design page prototypes according to customer needs;</li>
                     <li>
-                      Front-end development: based on the open source project
-                      paleobiodb/navigator to save development costs;
+                      Front-end development: Drawing on the open source project
+                      paleobiodb/navigator, using D3.js and Leaflet to realize
+                      the display of standard fossil data;
                     </li>
                     <li>
-                      MySQL database construction and back-end development: find
-                      SQL injection problems in the company's internal
-                      framework, and use parameterized statement + whitelist to
-                      fix them;
+                      Database and back-end development: MySQL is used for the
+                      database, and ASP.NET is used for the back-end
+                      development.
                     </li>
-                    <li>System testing and deployment;</li>
-                    <li>Write project documentation.</li>
                   </ul>
                 </div>
               </li>
             </ul>
-          </dd>
-        </div>
-        <div class="resume-detailinfo">
-          <dl>
-            <h2>education</h2>
-          </dl>
-          <dd>
+          </div>
+        </article>
+
+        <article class="resume-detailinfo">
+          <h2 class="resume-detailinfo__title">education</h2>
+          <div class="resume-detailinfo__content">
             <ul>
               <li>
                 Liaoning Technical University | Bachelor's degree | Geographic
@@ -193,14 +246,12 @@
                 <span class="tag">2014 - 2018</span>
               </li>
             </ul>
-          </dd>
-        </div>
+          </div>
+        </article>
 
-        <div class="resume-detailinfo">
-          <dl>
-            <h2>certifications</h2>
-          </dl>
-          <dd>
+        <article class="resume-detailinfo">
+          <h2 class="resume-detailinfo__title">certifications</h2>
+          <div class="resume-detailinfo__content">
             <ul>
               <li>
                 National Information Engineering Project - GIS Application
@@ -212,13 +263,12 @@
                 National Computer Level 2 <span class="tag">2016.09</span>
               </li>
             </ul>
-          </dd>
-        </div>
-        <div class="resume-detailinfo">
-          <dl>
-            <h2>open source contributions</h2>
-          </dl>
-          <dd>
+          </div>
+        </article>
+
+        <article class="resume-detailinfo">
+          <h2 class="resume-detailinfo__title">open source contributions</h2>
+          <div class="resume-detailinfo__content">
             <div class="open-source-contributions">
               <ul>
                 <li>VS Code Snippet Manager;</li>
@@ -233,9 +283,10 @@
                 </li>
               </ul>
             </div>
-          </dd>
-        </div>
+          </div>
+        </article>
       </section>
+
       <aside class="language-options">
         <a href="index.html">简体中文</a>
         |
