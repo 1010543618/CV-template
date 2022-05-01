@@ -43,17 +43,19 @@ a {
 .inline-group {
   display: inline-block;
 }
-.language-options {
-  position: absolute;
-  top: 0.2em;
-  right: 0.5em;
+.printing-show {
+  display: none;
 }
+
 @media print {
   a {
-    color: black;
+    color: rgb(0, 0, 238);
   }
-  .language-options {
+  .printing-hide {
     display: none;
+  }
+  .printing-show {
+    display: unset;
   }
 }
 
@@ -142,6 +144,17 @@ a {
   border-radius: 0.2em;
   background: lightgreen;
   white-space: nowrap;
+}
+
+/* aside */
+.resume-aside {
+  position: absolute;
+  top: 0.2em;
+  right: 0.5em;
+}
+
+.resume-aside .print-btn {
+  margin-right: 0.5em;
 }
 
 /* Responsive */
