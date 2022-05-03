@@ -46,6 +46,10 @@ a {
 .printing-show {
   display: none;
 }
+.resume-fa-1em {
+  width: 1em;
+  text-align: center;
+}
 
 @media print {
   a {
