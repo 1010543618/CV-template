@@ -1,0 +1,15 @@
+{
+  "private": "true",
+  "name": "online-resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:zjffun/online-resume.git",
+  "author": "Jufeng Zhang <zjffun@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "relation2-check": "relation2 check"
+  },
+  "devDependencies": {
+    "relation2": "^0.0.4"
+  }
+}
